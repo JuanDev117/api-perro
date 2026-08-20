@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#17324d" />
+    <title>CanisCare | Gestion veterinaria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="login-screen" id="login-screen">
+      <form class="login-card" id="login-form">
+        <div class="brand login-brand">
+          <span class="brand-mark"><i data-lucide="paw-print"></i></span>
+          <span><strong>CanisCare</strong><small>Ingreso al sistema</small></span>
+        </div>
+        <label for="login-role">Rol de ingreso</label>
+        <select id="login-role" name="role" required>
+          <option value="admin">Administrador</option>
+          <option value="veterinario">Veterinario</option>
+          <option value="empleado">Empleado</option>
+          <option value="adoptante">Adoptante</option>
+        </select>
+        <button class="primary-btn" type="submit">
+          <i data-lucide="log-in"></i><span>Ingresar</span>
+        </button>
+      </form>
+    </section>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand">
+          <span class="brand-mark"><i data-lucide="paw-print"></i></span>
+          <span
+            ><strong>CanisCare</strong><small>Salud veterinaria</small></span
+          >
+        </div>
+        <nav class="nav" aria-label="Navegacion principal">
+          <button class="nav-item active" data-tab="dashboard">
+            <i data-lucide="layout-dashboard"></i><span>Resumen</span>
+          </button>
+          <p class="nav-label">Gestion</p>
+          <button class="nav-item" data-tab="perros">
+            <i data-lucide="dog"></i><span>Perros</span>
+          </button>
+          <button class="nav-item" data-tab="fichas">
+            <i data-lucide="clipboard-list"></i><span>Fichas tecnicas</span>
+          </button>
+          <button class="nav-item" data-tab="veterinarios">
+            <i data-lucide="stethoscope"></i><span>Veterinarios</span>
+          </button>
+          <button class="nav-item" data-tab="empleados">
+            <i data-lucide="contact-round"></i><span>Personal</span>
+          </button>
+          <p class="nav-label">Atencion</p>
+          <button class="nav-item" data-tab="chequeos">
+            <i data-lucide="heart-pulse"></i><span>Chequeos</span>
+          </button>
+          <button class="nav-item" data-tab="vacunas">
+            <i data-lucide="syringe"></i><span>Vacunacion</span>
+          </button>
+          <button class="nav-item" data-tab="desparasitacion">
+            <i data-lucide="pill"></i><span>Desparasitacion</span>
+          </button>
+        </nav>
+        <div class="session-card">
+          <span>Sesion activa</span>
+          <strong id="current-role">Rol</strong>
+          <button class="secondary-btn" id="logout-button" type="button">
+            <i data-lucide="log-out"></i><span>Salir</span>
+          </button>
+        </div>
+      </aside>
+      <section class="main-area">
+        <header class="topbar">
+          <button
+            class="icon-btn mobile-menu"
+            id="menu-button"
+            title="Abrir menu"
+          >
+            <i data-lucide="menu"></i>
+          </button>
+          <div>
+            <p class="eyebrow" id="page-kicker">CENTRO VETERINARIO</p>
+            <h1 id="page-title">Resumen clinico</h1>
+          </div>
+          <div class="topbar-actions">
+            <span class="db-led offline" id="db-status" title="Base de datos sin verificar"></span>
+            <button class="secondary-btn" id="refresh-page">
+              <i data-lucide="refresh-cw"></i><span>Actualizar</span></button
+            ><button class="primary-btn" id="new-record">
+              <i data-lucide="plus"></i><span>Nuevo registro</span>
+            </button>
+          </div>
+        </header>
+        <main id="content" class="content" tabindex="-1"></main>
+      </section>
+    </div>
+    <div class="modal-backdrop hidden" id="modal-backdrop">
+      <section
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+      >
+        <div class="modal-header">
+          <div>
+            <p class="eyebrow" id="modal-kicker">REGISTRO</p>
+            <h2 id="modal-title">Nuevo registro</h2>
+          </div>
+          <button class="icon-btn" id="close-modal" title="Cerrar">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+        <form id="modal-form" class="modal-form"></form>
+      </section>
+    </div>
+    <div id="toast-region" class="toast-region" aria-live="polite"></div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
