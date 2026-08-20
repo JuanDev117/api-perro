@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: caniscare-frontend
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: API_BASE_URL
+        sync: false

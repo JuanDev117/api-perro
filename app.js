@@ -1,6 +1,9 @@
 const state = {
   tab: "dashboard",
-  apiBase: localStorage.getItem("caniscare-api") || "http://localhost:8081",
+  apiBase:
+    localStorage.getItem("caniscare-api") ||
+    window.CANISCARE_CONFIG?.API_BASE_URL ||
+    "http://localhost:8081",
   role: localStorage.getItem("caniscare-role") || "",
   dogs: [],
   vets: [],
