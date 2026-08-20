@@ -1,0 +1,122 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< co.edu.uniremington.ladeuth:prueba_api >---------------
+[INFO] Building prueba_api 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.3.5:run (default-cli) > test-compile @ prueba_api >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ prueba_api ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ prueba_api ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ prueba_api ---
+[INFO] skip non existing resourceDirectory C:\Users\USUARIO\OneDrive\Proyects\api perro nuevo\api-paternina\prueba_api\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ prueba_api ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 1 source file with javac [debug parameters release 21] to target\test-classes
+[INFO] 
+[INFO] <<< spring-boot:3.3.5:run (default-cli) < test-compile @ prueba_api <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.3.5:run (default-cli) @ prueba_api ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2026-08-05T15:35:37.546-05:00  INFO 6856 --- [prueba_api] [  restartedMain] c.e.u.l.prueba_api.PruebaApiApplication  : Starting PruebaApiApplication using Java 23.0.2 with PID 6856 (C:\Users\USUARIO\OneDrive\Proyects\api perro nuevo\api-paternina\prueba_api\target\classes started by USUARIO in C:\Users\USUARIO\OneDrive\Proyects\api perro nuevo\api-paternina\prueba_api)
+2026-08-05T15:35:37.555-05:00  INFO 6856 --- [prueba_api] [  restartedMain] c.e.u.l.prueba_api.PruebaApiApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T15:35:37.625-05:00  INFO 6856 --- [prueba_api] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-08-05T15:35:37.625-05:00  INFO 6856 --- [prueba_api] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-08-05T15:35:42.324-05:00  INFO 6856 --- [prueba_api] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-05T15:35:43.438-05:00  INFO 6856 --- [prueba_api] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1034 ms. Found 2 JPA repository interfaces.
+2026-08-05T15:35:44.661-05:00  INFO 6856 --- [prueba_api] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-08-05T15:35:44.677-05:00  INFO 6856 --- [prueba_api] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T15:35:44.678-05:00  INFO 6856 --- [prueba_api] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-08-05T15:35:44.726-05:00  INFO 6856 --- [prueba_api] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-08-05T15:35:44.726-05:00  INFO 6856 --- [prueba_api] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7101 ms
+2026-08-05T15:35:44.754-05:00  INFO 6856 --- [prueba_api] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-05T15:35:49.259-05:00  INFO 6856 --- [prueba_api] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@33c71a1
+2026-08-05T15:35:49.261-05:00  INFO 6856 --- [prueba_api] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-05T15:35:49.275-05:00  INFO 6856 --- [prueba_api] [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://ep-square-dream-ax1lux4e-pooler.c-4.us-east-2.aws.neon.tech/neondb?sslmode=require'
+2026-08-05T15:35:49.454-05:00  INFO 6856 --- [prueba_api] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-08-05T15:35:49.606-05:00  INFO 6856 --- [prueba_api] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-08-05T15:35:49.710-05:00  INFO 6856 --- [prueba_api] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-08-05T15:35:50.264-05:00  INFO 6856 --- [prueba_api] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-05T15:35:51.815-05:00  WARN 6856 --- [prueba_api] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-08-05T15:35:57.626-05:00  INFO 6856 --- [prueba_api] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    alter table if exists ficha 
+       drop constraint if exists FKivw6n573nqyjd6xwxi7hyn4od
+Hibernate: 
+    drop table if exists ficha cascade
+Hibernate: 
+    drop table if exists perros cascade
+Hibernate: 
+    create table ficha (
+        fecha_nacimiento date not null,
+        perro_id bigint not null,
+        colores varchar(100) not null,
+        pelaje varchar(100) not null,
+        raza varchar(100) not null,
+        altura varchar(255) not null,
+        esperanza_de_vida varchar(255) not null,
+        peso varchar(255) not null,
+        primary key (perro_id)
+    )
+Hibernate: 
+    create table perros (
+        disponible boolean,
+        edad bigint not null check (edad>=0),
+        id bigint generated by default as identity,
+        nombre varchar(100) not null,
+        codigo_interno varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists ficha 
+       add constraint FKivw6n573nqyjd6xwxi7hyn4od 
+       foreign key (perro_id) 
+       references perros
+2026-08-05T15:35:59.870-05:00  INFO 6856 --- [prueba_api] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-05T15:36:00.913-05:00  INFO 6856 --- [prueba_api] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-05T15:36:06.677-05:00  WARN 6856 --- [prueba_api] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2026-08-05T15:36:06.705-05:00  WARN 6856 --- [prueba_api] [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-08-05T15:36:06.706-05:00  INFO 6856 --- [prueba_api] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-05T15:36:06.709-05:00  INFO 6856 --- [prueba_api] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-08-05T15:36:07.767-05:00  INFO 6856 --- [prueba_api] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-08-05T15:36:07.802-05:00  INFO 6856 --- [prueba_api] [  restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-08-05T15:36:07.818-05:00 ERROR 6856 --- [prueba_api] [  restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  40.805 s
+[INFO] Finished at: 2026-08-05T15:36:07-05:00
+[INFO] ------------------------------------------------------------------------
