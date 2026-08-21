@@ -2,8 +2,12 @@ const state = {
   tab: "dashboard",
   apiBase:
     localStorage.getItem("caniscare-api") ||
+<<<<<<< HEAD
     window.CANISCARE_CONFIG?.API_BASE_URL ||
     "http://localhost:8081",
+=======
+    (typeof API_URL !== "undefined" ? API_URL : window.CANISCARE_CONFIG?.API_BASE_URL || "http://localhost:8081"),
+>>>>>>> 910c341 (final)
   role: localStorage.getItem("caniscare-role") || "",
   dogs: [],
   vets: [],
